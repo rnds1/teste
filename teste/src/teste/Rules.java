@@ -13,7 +13,13 @@ import java.util.Random;
  * @author W7E
  */
 public class Rules {
-    private String palavra;
+    
+    //inicializardores
+    word local = new world();
+    
+    //end
+    
+    private String palavra =  local.b();
     private String letra;
     private String mascara;
     private String linha;
@@ -21,8 +27,11 @@ public class Rules {
     private char[] arrays;
     private int chances;
     
+    
+    
     public Rules(){
-   //ta fazendo nada isso.
+    //setar valores;
+       
     }
     
     
