@@ -11,12 +11,18 @@ import java.util.Random;
  *
  * @author W7E
  */
-public class word {
-     Random r =  new Random();
-     String[] a = {"casa", "escola","praia"};
+public class  word {
+     private Random r =  new Random();
+    private String[] a = {"casa", "escola","praia"};
      
      public String b(){
      
      return a[r.nextInt(a.length)];
      }
+
+    public word() {
+        b().toString();
+    }
+     
+     
 }

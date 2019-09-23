@@ -16,8 +16,12 @@ public class Teste {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-       
-
+        word x =new word();
+        String palavra =  x.b();
+        //base
+        System.out.println(palavra);
+        
+        
     }
     
 }
