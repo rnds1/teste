@@ -16,11 +16,11 @@ import uai.Botao;
 public class Rules {
     
     //inicializardores
-    Word local = new Word();
+    
     
     //end
     
-    private String palavra =  local.b();
+    private String palavra ;
     private String letra;
     private String mascara;
     private String linha;
