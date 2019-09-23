@@ -15,7 +15,7 @@ import java.util.Random;
 public class Rules {
     
     //inicializardores
-    word local = new world();
+    word local = new word();
     
     //end
     
