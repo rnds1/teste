@@ -1,3 +1,5 @@
+package uai;
+
 
 import teste.Rules;
 
