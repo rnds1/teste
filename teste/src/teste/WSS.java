@@ -5,12 +5,22 @@
  */
 package teste;
 
+import java.awt.image.RasterOp;
+import uai.Botao;
 /**
  *
  * @author W7E
  */
 public  class WSS {
     public static void main(String[] arvs){}
+    //Botao a = new Botao('a');
+
+    
+    Rules r =  new Rules();
+    
+   
     
     
 }
+    
+

@@ -28,7 +28,11 @@ public class Rules {
     private char[] arrays;
     private int chances;
     
-    
+    public  void xtrin(){
+        for(char kk = 'a';kk<'z';kk++){
+            System.out.println(kk);
+        }
+    }
     
     public Rules(){
     //setar valores;
@@ -46,6 +50,7 @@ public class Rules {
  
     
     }
+     
     
     
     
