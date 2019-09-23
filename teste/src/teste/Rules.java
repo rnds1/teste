@@ -9,15 +9,6 @@ package teste;
  *
  * @author W7E
  */
-public class Teste {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-       
-
-    }
+public class Rules {
     
 }
