@@ -22,7 +22,7 @@ public class Rules {
     private int chances;
     
     public Rules(){
-   
+   //ta fazendo nada isso.
     }
     
     
