@@ -5,7 +5,7 @@
  */
 package teste;
 
-import java.lang.invoke.WrongMethodTypeException;
+
 import java.util.Random;
 import uai.Botao;
 
@@ -16,7 +16,7 @@ import uai.Botao;
 public class Rules {
     
     //inicializardores
-    word local = new word();
+    Word local = new Word();
     
     //end
     
