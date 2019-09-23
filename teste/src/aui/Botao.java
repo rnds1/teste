@@ -14,12 +14,18 @@ import teste.Rules;
  * @author W7E
  */
 public class Botao {
-    private char value;
+    public char value;
+    public int pox;
     private boolean active = true;
+
+    public Botao(char x) {
+        value = x;
+        pox = (int)x;
+    }
     
     public void check(){
-          
-        
+       
+        active = false;
         
     }
 }

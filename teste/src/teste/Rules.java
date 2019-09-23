@@ -7,6 +7,7 @@ package teste;
 
 import java.lang.invoke.WrongMethodTypeException;
 import java.util.Random;
+import uai.Botao;
 
 /**
  *
