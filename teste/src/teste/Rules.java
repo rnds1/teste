@@ -5,10 +5,47 @@
  */
 package teste;
 
+import java.lang.invoke.WrongMethodTypeException;
+import java.util.Random;
+
 /**
  *
  * @author W7E
  */
 public class Rules {
+    private String palavra;
+    private String letra;
+    private String mascara;
+    private String linha;
+    private char[] array;
+    private char[] arrays;
+    private int chances;
     
-}
+    public Rules(){
+   
+    }
+    
+    
+    private void run(){
+    /*
+     * este sera o loop do jogo;
+     *
+     *
+     */
+    
+ 
+    
+    }
+    
+    
+    
+}//end class Rules
+
+    class GerarPalavra{
+        
+
+    
+        
+
+
+}//end of class
