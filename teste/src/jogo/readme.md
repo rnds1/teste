@@ -1,6 +1,57 @@
 Base do jogo deve seguir os seguites scripts:
  que deveram ser otimizados!...
 
+        @autor Rafael Nascimento dos Santos
+            Formando em CST Jogos digitais Unime (LF)
+        @projeto Jogo da forca
+        @Status em andamento:incompleto
+        @prof Othon 
+
+
+            Objetivo:
+        Criar um jogo da forca com palavra predefinida, onde o jogador ira 
+digitar uma letra, ou tentar a sorte digitando toda a palavra, que caso esteja 
+até completar a palavra. Porem ele tem um numero(6) limitado de chances.
+Como é o jogo da forca uma <imagem> vai se formando casa vez que o jogador erra;
+
+    Codigo:
+        
+    1.Basta apenas criar o objeto do jogo no main para ele ser executado;
+       
+    2 Script do jogo:
+    2.1 Variaveis utilizadas :
+    2.2 Funcoes:
+    2.3 Autostart:
+    No construtor do jogo chama a função Run que controla o estado do jogo.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Scanner l = new Scanner(System.in);
 
         String letra; 
@@ -52,8 +103,7 @@ Scanner l = new Scanner(System.in);
               chances --;
                
                 Jogo.mostrarForca(7-chances);
-            }
-//fiz até aqui.
+
             //ver se ja completou
           ctn = false;
             for(int i=0;i<6;i++){
@@ -67,3 +117,5 @@ Scanner l = new Scanner(System.in);
 			
             }
            
+            }
+//fiz até aqui.
