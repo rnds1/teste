@@ -2,6 +2,7 @@ Base do jogo deve seguir os seguites scripts:
  que deveram ser otimizados!...
 
 Scanner l = new Scanner(System.in);
+
         String letra;
 	
         String aux;
