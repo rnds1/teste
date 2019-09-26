@@ -61,6 +61,21 @@ public class Jogo{
             System.out.println("Tente novamente");
             
             }
+        }//end checar letra
+        
+        private boolean completo(){
+            if(mask.equals(palavra)) return true; else{return false;}
+                   
+        }
+        public void lp(){
+        if(letra.length()<1){
+            System.out.println("letra invalida\n tente novamente");
+            ler();
+            }
+        else if(letra.length()>0&letra.length()<2){
+            checkLetra();
+            }
+        
         }
         
         /*

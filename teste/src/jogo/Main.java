@@ -10,5 +10,10 @@ package jogo;
  * @author Rafael
  */
 public class Main {
+    public static void main(String[]argv ){
+    Jogo x = new Jogo();
+    x.ler();
+    
+    }
     
 }

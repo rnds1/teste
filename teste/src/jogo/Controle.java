@@ -4,8 +4,8 @@ import java.util.Scanner;
 
 public class Controle{
 
-    public static void main(String[]argv ){
-		
+    //public static void main(String[]argv ){
+	/*	
        Scanner l = new Scanner(System.in);
         String letra;
         String aux;
@@ -63,9 +63,9 @@ public class Controle{
         }//end game;
         
         
-        
+        */
         
     
-    }
+    //}
 
 };

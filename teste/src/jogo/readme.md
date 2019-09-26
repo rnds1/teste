@@ -45,6 +45,7 @@ Scanner l = new Scanner(System.in);
                         mask[i] = bux[0];
                     }
                 }
+
                 System.out.println(mask);
             }//end else
             else{
@@ -52,6 +53,7 @@ Scanner l = new Scanner(System.in);
                
                 Jogo.mostrarForca(7-chances);
             }
+//fiz até aqui.
             //ver se ja completou
           ctn = false;
             for(int i=0;i<6;i++){
