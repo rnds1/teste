@@ -3,15 +3,25 @@ Base do jogo deve seguir os seguites scripts:
 
 Scanner l = new Scanner(System.in);
         String letra;
+	
         String aux;
+	
         char[] bux;
+	
         String palavra = "abcdef";
+	
         String superMask = "------";
+	
         int chances = 6;
+	
         char[] mask;
+	
         mask = superMask.toCharArray();
+	
         int conpletos =0;
+	
         boolean ctn =true;
+	
         
         
         while(chances > 0&& ctn ==true){
