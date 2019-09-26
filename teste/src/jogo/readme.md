@@ -3,7 +3,7 @@ Base do jogo deve seguir os seguites scripts:
 
 Scanner l = new Scanner(System.in);
 
-        String letra;
+     <b>   String letra; </b>
 	
         String aux;
 	
