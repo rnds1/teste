@@ -33,11 +33,13 @@ public class Jogo{
 	public void ler(){
         letra = ler.nextLine();
         }
+      
         public void getFirstchar(){
             System.out.println("Gerando caractere,,,");
             bux = letra.toCharArray();
-            aux = String.valueOf(bux[0]);
+            aux =  String.valueOf(bux[0]);
         }
+     
         public void checkPalavra(){
             System.out.println("checando palavra,,,");
         if(palavra.equals(letra)){
@@ -49,21 +51,34 @@ public class Jogo{
             System.out.println("Tente novamente");
             }
         }
+       
         public void checkLetra(){
+             getFirstchar();
+             
             System.out.println("checando letra...");
-        if(palavra.contains(aux.toString())){
+           
+        if(palavra.contains(aux)){
+            
              System.out.println("algo certo");
+             
              for(int i=0;i<palavra.length();i++){
+                 
                     if(palavra.charAt(i) == aux.charAt(0)){
+                        
                         maskconv = mask.toCharArray(); //reduntante
+                        
                         maskconv[i] = aux.charAt(0);
+                        
                         mask = String.valueOf(maskconv); //redundante
                     }
                    }
             }else {
+            
             chances --;
+            
             System.out.println("Tente novamente");            
             }
+            
         }//end checar letra
         
         public boolean completo(){

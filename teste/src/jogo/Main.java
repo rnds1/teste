@@ -15,7 +15,7 @@ public class Main {
     //System.out.println("XXXX");
     x.ler();
     x.lp();
-    x.completo();
+    
     
             }
     
