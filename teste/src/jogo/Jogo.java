@@ -34,12 +34,15 @@ public class Jogo{
         letra = ler.nextLine();
         }
         public void getFirstchar(){
+            System.out.println("Gerando caractere,,,");
             bux = letra.toCharArray();
             aux = String.valueOf(bux[0]);
         }
         public void checkPalavra(){
+            System.out.println("checando palavra,,,");
         if(palavra.equals(letra)){
             System.out.println("WIN");
+            mask = palavra;
             }
             else {
             chances --;
@@ -47,7 +50,8 @@ public class Jogo{
             }
         }
         public void checkLetra(){
-        if(palavra.contains(aux)){
+            System.out.println("checando letra...");
+        if(palavra.contains(aux.toString())){
              System.out.println("algo certo");
              for(int i=0;i<palavra.length();i++){
                     if(palavra.charAt(i) == aux.charAt(0)){
@@ -58,26 +62,25 @@ public class Jogo{
                    }
             }else {
             chances --;
-            System.out.println("Tente novamente");
-            
+            System.out.println("Tente novamente");            
             }
         }//end checar letra
         
-        private boolean completo(){
-            if(mask.equals(palavra)) return true; else{return false;}
-                   
+        public boolean completo(){
+            System.out.println("...");
+            if(mask.equals(palavra)) return true; else{return false;}                   
         }
         public void lp(){
+            System.out.println("lp...");
         if(letra.length()<1){
             System.out.println("letra invalida\n tente novamente");
             ler();
             }
-        else if(letra.length()>0&letra.length()<2){
-            checkLetra();
-            }else{
-            checkPalavra();
-            }
-        
+        else if(letra.length()>0&letra.length()<2){            
+            checkLetra();            
+            }else{            
+                checkPalavra();            
+            }        
         }
         
         /*

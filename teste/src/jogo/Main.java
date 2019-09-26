@@ -12,8 +12,11 @@ package jogo;
 public class Main {
     public static void main(String[]argv ){
     Jogo x = new Jogo();
+    //System.out.println("XXXX");
     x.ler();
+    x.lp();
+    x.completo();
     
-    }
+            }
     
 }
