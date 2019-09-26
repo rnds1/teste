@@ -12,9 +12,9 @@ public class Jogo{
         private String palavra = "abcdef";
         private String mask = "------"; //usar char[] para tirar redundancia ao converter;
         private char[] maskconv;
-        private int chances;
+        private int chances =6;
         private int completos;
-        private boolean cont = true;
+        //private boolean cont = true;
     
       /*  
 	private String palavra;
@@ -30,17 +30,17 @@ public class Jogo{
 	"|  / \\", //6
 	"| /   \\\n\n YOU LOSE OTARO."}; //7
 	//funcionando
-	public void ler(){
+	private void ler(){
         letra = ler.nextLine();
         }
       
-        public void getFirstchar(){
+        private void getFirstchar(){
             System.out.println("Gerando caractere,,,");
             bux = letra.toCharArray();
             aux =  String.valueOf(bux[0]);
         }
      
-        public void checkPalavra(){
+        private void checkPalavra(){
             System.out.println("checando palavra,,,");
         if(palavra.equals(letra)){
             System.out.println("WIN");
@@ -52,7 +52,7 @@ public class Jogo{
             }
         }
        
-        public void checkLetra(){
+        private void checkLetra(){
              getFirstchar();
              
             System.out.println("checando letra...");
@@ -81,9 +81,9 @@ public class Jogo{
             
         }//end checar letra
         
-        public boolean completo(){
+        private boolean completo(){
             System.out.println("...");
-            if(mask.equals(palavra)) return true; else{return false;}                   
+            if(mask.equals(palavra) | chances < 1){ return false;} else{return true;}                   
         }
         public void lp(){
             System.out.println("lp...");
@@ -98,6 +98,30 @@ public class Jogo{
             }        
         }
         
+        private void run(){
+            while(completo()){
+            ler();
+            lp();
+            Jogo.mostrarForca(chances - 7);
+                System.out.println(mask);
+                System.out.println("chances:"+ chances);
+                
+            }
+        }
+
+        public Jogo() {
+        run();
+    }
+        
+        public void motd(){
+            System.out.println("");
+        }
+        public void win(){
+            System.out.println("");
+        }
+        public void lAD(){ //letra já digitada
+            System.out.println("");
+        }
         /*
         
         
