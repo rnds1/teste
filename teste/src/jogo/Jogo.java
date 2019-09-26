@@ -1,7 +1,20 @@
 package jogo;
 
+import java.util.Scanner;
+
 
 public class Jogo{
+    
+        private Scanner ler = new Scanner(System.in);
+        private String letra;
+        private String aux;
+        private char[] bux;
+        private String palavra = "abcdef";
+        private String mask = "------"; //usar char[] para tirar redundancia ao converter;
+        private char[] maskconv;
+        private int chances;
+        private int completos;
+        private boolean cont = true;
     
       /*  
 	private String palavra;
@@ -17,7 +30,43 @@ public class Jogo{
 	"|  / \\", //6
 	"| /   \\\n\n YOU LOSE OTARO."}; //7
 	//funcionando
-	/*
+	public void ler(){
+        letra = ler.nextLine();
+        }
+        public void getFirstchar(){
+            bux = letra.toCharArray();
+            aux = String.valueOf(bux[0]);
+        }
+        public void checkPalavra(){
+        if(palavra.equals(letra)){
+            System.out.println("WIN");
+            }
+            else {
+            chances --;
+            System.out.println("Tente novamente");
+            }
+        }
+        public void checkLetra(){
+        if(palavra.contains(aux)){
+             System.out.println("algo certo");
+             for(int i=0;i<palavra.length();i++){
+                    if(palavra.charAt(i) == aux.charAt(0)){
+                        maskconv = mask.toCharArray(); //reduntante
+                        maskconv[i] = aux.charAt(0);
+                        mask = String.valueOf(maskconv); //redundante
+                    }
+                   }
+            }else {
+            chances --;
+            System.out.println("Tente novamente");
+            
+            }
+        }
+        
+        /*
+        
+        
+        
 	public void jogar(){
 		this.palavra = "abcdef";
 		//funcionando
