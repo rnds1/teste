@@ -74,6 +74,8 @@ public class Jogo{
             }
         else if(letra.length()>0&letra.length()<2){
             checkLetra();
+            }else{
+            checkPalavra();
             }
         
         }
